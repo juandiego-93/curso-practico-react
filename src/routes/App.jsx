@@ -8,6 +8,7 @@ import Home from '../pages/Home.jsx';
 import NotFound from '../pages/NotFound.jsx';
 import '../styles/global.css';
 import CreateAccount from '../pages/CreateAccount.jsx';
+import MyAccount from '../pages/MyAccount.jsx';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                     <Route exact path="/new-password" element = {<NewPassword />} />
                     <Route exact path="/login" element = {<Login />} />
                     <Route exact path="/create-account" element = {<CreateAccount />} />
+                    <Route exact path="/my-account" element = {<MyAccount />} />
                     <Route exact path="/recovery-password" element={<RecoveryPassword />} />
                     <Route path= "*" element={<NotFound />} />
                 </Routes>
