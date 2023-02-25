@@ -9,7 +9,9 @@ import NotFound from '../pages/NotFound.jsx';
 import '../styles/global.css';
 import CreateAccount from '../pages/CreateAccount.jsx';
 import MyAccount from '../pages/MyAccount.jsx';
-import MyOrder from '../containers/MyOrder.jsx';
+import Checkout from '../pages/Checkout.jsx';
+import Orders from '../pages/Orders.jsx';
+import SendEmail from '../pages/SendEmail.jsx';
 
 const App = () => {
     return (
@@ -22,6 +24,9 @@ const App = () => {
                     <Route exact path="/create-account" element = {<CreateAccount />} />
                     <Route exact path="/my-account" element = {<MyAccount />} />
                     <Route exact path="/recovery-password" element={<RecoveryPassword />} />
+                    <Route exact path='/checkout' element ={<Checkout />} />
+                    <Route exact path='/orders' element ={<Orders />} />
+                    <Route exact path='/send-email' element ={<SendEmail />} />
                     <Route path= "*" element={<NotFound />} />
                 </Routes>
             </Layout>     
