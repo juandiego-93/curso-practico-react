@@ -9,7 +9,6 @@ const useGetProducts = (API) => {
         setProducts(response.data);
     }, [])
     return products;
-
 };
 
 export default useGetProducts;
